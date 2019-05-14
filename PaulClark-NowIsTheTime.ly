@@ -51,16 +51,20 @@ harmonies = \chordmode {
     \new Lyrics \lyricsto "one" \text
   >>
   \layout { 
-    #(layout-set-staff-size 15)
+
+  \override NoteHead.font-size = #0
+  
+
+    \override Staff.StaffSymbol.staff-space = #.8
     \context { \ChordNames
-     \override ChordName #'font-size = #2
+     \override ChordName #'font-size = #1
      \override ChordName #'font-name = #"Roman"
 
   } 
 
   \context {
     \Score
-      \override LyricText #'font-size = #2
+      \override LyricText #'font-size = #1
   } 
  }
   \midi { }
