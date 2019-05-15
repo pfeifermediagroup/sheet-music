@@ -46,7 +46,8 @@ harmonies = \chordmode {
 | g2 a:m7 | c d4:sus4 d | g2 a:m7 | c2 g |
 
 |e1:m7 | c | g | c2 d2 | e1:m7 | c | g2 a2:m7 | c g |
-|g2 a:m7 | c8. d16~ d8  g8 g4 r4 |
+|g2 a:m7 | c8. d16~ d8  g8 g2 |
+| f1 | g1 | f1 | g1 | f1 | g1 | f2 g2 | a1 |
 }
 
 \score {
