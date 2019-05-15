@@ -24,10 +24,10 @@ melody = \relative c'' {
   }
   \alternative {
   { | R1 | R | }
-  { | R1 | R | }
+  { | c2.( e4 | d1) | c2~( c8 b a g | g1) |
+    | c2.( e4 | d1) | c2( d | e1) | }
   }
-  | R1 | R | R | R | R | R |
-
+  
 }
 text = \lyricmode { 
 
@@ -38,6 +38,7 @@ text = \lyricmode {
   Lord, rich in His mer -- cy, 
   full of com -- pas- sion and kind -- ness toward me will re --
   store that which was bro -- ken so I can be what He wants me to be.
+  Whoa, __ Whoa, __ Whoa, __  Whoa! __
 }
 
 harmonies = \chordmode {
