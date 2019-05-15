@@ -13,20 +13,31 @@ melody = \relative c'' {
   \autoBeamOn
 
   | R1 | R | R | R | \break
+  \repeat volta 2 { 
   | g8. g16~ g8 g a8. a16~ a8 a | c8. b16~ b8 a g4 fis |
   | g8. g16~ g8 g a8. a16~ a8 a | b8. c16~ c8 b a4 r4 |
   | g8. g16~ g8 g a8. a16~ a8 a | c8. b16~ b8 a g4 fis |
   | g8. g16~ g8 g g8. a16~ a8 b | a8. g16~ g8 fis g4 b8 d |
-  | d1 | d8. c16~ c8 b b4 a | g8. g16~ g8 g g8. a16~ a8 b | b8. c16~ c8 
+  | d1 | d8. c16~ c8 b b4 a | g8. g16~ g8 g g8. a16~ a8 b | 
+  | b8. c16~ c8 b a4 b8 d | d1 | d8. c16~ c8 b b4 a |
+  | g8. g16~ g8 g g8. a16~ a8 b | a8. g16~ g8 fis g4 r4 |
+  }
+  \alternative {
+  { | R1 | R | }
+  { | R1 | R | }
+  }
+  | R1 | R | R | R | R | R |
 
 }
-
 text = \lyricmode { 
 
   This is __ the day that the Lord God has giv -- en. 
   Now is the time for my soul to be free.
   This is the hour __ _ my heart is for -- giv -- en
   So I can be what You want me to be. For the
+  Lord, rich in His mer -- cy, 
+  full of com -- pas- sion and kind -- ness toward me will re --
+  store that which was bro -- ken so I can be what He wants me to be.
 }
 
 harmonies = \chordmode {
@@ -34,7 +45,8 @@ harmonies = \chordmode {
 | g2 a:m7 | c d4:sus4 d | g2 a:m7 | c2 d |
 | g2 a:m7 | c d4:sus4 d | g2 a:m7 | c2 g |
 
-|a1:m7
+|e1:m7 | c | g | c2 d2 | e1:m7 | c | g2 a2:m7 | c g |
+|g2 a:m7 | c8. d16~ d8  g8 g4 r4 |
 }
 
 \score {
