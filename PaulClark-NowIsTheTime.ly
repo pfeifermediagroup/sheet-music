@@ -1,8 +1,14 @@
 \header {
   title = "NOW IS THE TIME"
   composer = \markup { \right-column {"Words and Music by" \bold "PAUL CLARK" } }
- 
+  tagline = ##f
+  copyright = \markup \override #'(font-size . -2 ) { "© Copyright Paul Clark / Minstrel's Voyage Music (ASCAP)" }
+  
 }
+
+ \paper {
+    system-system-spacing.basic-distance = #15
+  } 
 
 melody = \relative c'' {
   \clef treble
@@ -12,7 +18,9 @@ melody = \relative c'' {
   \tempo "With Energy"
   \autoBeamOn
 
-  | R1 | R | R | R | \break
+  
+
+  | R1 | R | R | R |
   \repeat volta 2 { 
   | g8. g16~ g8 g a8. a16~ a8 a | c8. b16~ b8 a g4 fis |
   | g8. g16~ g8 g a8. a16~ a8 a | b8. c16~ c8 b a4 r4 |
@@ -66,6 +74,8 @@ harmonies = \chordmode {
   >>
   \layout { 
 
+
+
   \override NoteHead.font-size = #0
   
 
@@ -78,6 +88,7 @@ harmonies = \chordmode {
 
   \context {
     \Score
+      proportionalNotationDuration = #(ly:make-moment 1/12)
       \override LyricText #'font-size = #1
   } 
  }
