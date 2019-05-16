@@ -82,7 +82,7 @@ harmonies = \chordmode {
     \override Staff.StaffSymbol.staff-space = #.8
     \context { \ChordNames
      \override ChordName #'font-size = #1
-     \override ChordName #'font-name = #"Times New Roman"
+     \override ChordName #'font-name = #"Serif"
 
   } 
 
