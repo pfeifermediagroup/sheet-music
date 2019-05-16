@@ -45,7 +45,7 @@ text = \lyricmode {
   So I can be what You want me to be. For the
   Lord, rich in His mer -- cy, 
   full of com -- pas -- sion and kind -- ness toward me will re --
-  store that which was bro -- ken so I can be what He wants me to be.
+  store __ that which was bro -- ken so I can be what He wants me to be.
   Whoa, __ Whoa, __ Whoa, __  Whoa! __
 }
 
@@ -74,15 +74,12 @@ harmonies = \chordmode {
   >>
   \layout { 
 
-
-
   \override NoteHead.font-size = #-1
   
-
      \override Staff.StaffSymbol.staff-space = #.8
      \context { \ChordNames
      \override ChordName #'font-size = #1
-     \override ChordName #'font-name = #"Serif"
+     \override ChordName #'font-name = #"Roman"
      %\override ChordName #'font-series = #'bold
 
   } 
