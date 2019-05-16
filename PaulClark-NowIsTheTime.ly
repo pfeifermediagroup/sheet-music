@@ -18,7 +18,6 @@ melody = \relative c'' {
   \tempo "With Energy"
   \autoBeamOn
 
-  
 
   | R1 | R | R | R |
   \repeat volta 2 { 
@@ -79,8 +78,8 @@ harmonies = \chordmode {
   \override NoteHead.font-size = #0
   
 
-    \override Staff.StaffSymbol.staff-space = #.8
-    \context { \ChordNames
+     \override Staff.StaffSymbol.staff-space = #.8
+     \context { \ChordNames
      \override ChordName #'font-size = #1
      \override ChordName #'font-name = #"Serif"
 
